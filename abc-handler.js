@@ -59,7 +59,7 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
         console.log(xhr.responseText);
         document.getElementById('gform').style.display = 'none'; // hide form
         document.getElementById('thankyou_message').style.display = 'block';
-        document.getElementById('abc-file').href = 'www.google.at';
+        document.getElementById('abc-file').href = 'https://www.adtree.at/wp-content/uploads/2017/08/abc.pdf';
         return;
     };
     // url encode form data for sending as post data
