@@ -63,7 +63,7 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
         document.getElementById('thankyou_message').style.display = 'block';
         finished = "true";
         fakepath = "https://www.adtree.at/wp-content/uploads/2017/08/abc.pdf";
-        return;
+        return false;
     };
     // url encode form data for sending as post data
     var encoded = Object.keys(data).map(function(k) {
