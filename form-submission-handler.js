@@ -59,7 +59,9 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
         console.log(xhr.responseText);
         document.getElementById('gform').style.display = 'none'; // hide form
         document.getElementById('thankyou_message').style.display = 'block';
-        document.getElementById('download').click();
+        function Download(url) {
+          document.getElementById('my_iframe').src = url;
+        };
         location.reload();
         return;
     };
