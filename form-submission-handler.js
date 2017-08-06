@@ -60,7 +60,6 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
         document.getElementById('gform').style.display = 'none'; // hide form
         document.getElementById('thankyou_message').style.display = 'block';
         document.getElementById('abc-file').a.href = 'www.google.at';
-        return;
     };
     // url encode form data for sending as post data
     var encoded = Object.keys(data).map(function(k) {
