@@ -45,7 +45,8 @@ function getFormData() {
 function handleFormSubmit(event) {  // handles form submit withtout any jquery
   event.preventDefault();           // we are submitting via xhr below
   var data = getFormData();         // get the values submitted in the form
-  var finished = false;             // sets variable finished to false / download trigger
+  var finished = "false";             // sets variable finished to false / download trigger
+  var fakepath = "abc.pdf";
   if( !validEmail(data.email) ) {   // if email is not valid show error
     document.getElementById('email-invalid').style.display = 'block';
     return false;
@@ -60,7 +61,8 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
         console.log(xhr.responseText);
         document.getElementById('gform').style.display = 'none'; // hide form
         document.getElementById('thankyou_message').style.display = 'block';
-        finished = true;
+        finished = "true";
+        fakepath = "https://www.adtree.at/wp-content/uploads/2017/08/abc.pdf";
         return;
     };
     // url encode form data for sending as post data
